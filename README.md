@@ -26,8 +26,8 @@ janela = Tk()<br>
 def bt_click():<br>
     print("bt_click")<br>
     if( str( ed1.get() ).isnumeric() and str( ed2.get() ).isnumeric()  ):<br>
-        num1 = int(ed1.get())
-        num2 = int(ed2.get())
+        num1 = int(ed1.get())<br>
+        num2 = int(ed2.get())<br>
         lb["text"] = num1 + num2<br>
     else:<br>
         lb["text"] = "Valores informados inválidos"<br>
