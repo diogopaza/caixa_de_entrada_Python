@@ -14,33 +14,37 @@ resultado será exibido </h3>
 	 Caso a hipótese seja verdadeira, ele irá executar a rotina correspondende</li>
 </ul>
 
-<h6>Exemplo comentado</h6>
-from tkinter import *
+<h6>Exemplo prático</h6>
 
-janela = Tk()
-
-def bt_click():
-    print("bt_click")
-    if( str( ed1.get() ).isnumeric() and str( ed2.get() ).isnumeric()  ):
-        num1 = int(ed1.get())
-        num2 = int(ed2.get())
-        lb["text"] = num1 + num2
-    else:
-        lb["text"] = "Valores informados inválidos"
-
-ed1 = Entry(janela)
-ed1.place(x=100, y=100)
-ed2 = Entry(janela)
-ed2.place(x=100, y=130)
-
-bt = Button(janela, text="soma",width=20, command= bt_click )
-bt.place( x=100,y=150)
-
-lb = Label(janela, text="Label1")
-lb.place(x=100, y=200)
+#importando a biblioteca tkinter
+from tkinter import *<br>
 
 
-janela.geometry("400x300+500+200")
+janela = Tk()<br>
 
-janela.mainloop
+#cria metodo <br>
+def bt_click():<br>
+    print("bt_click")<br>
+    if( str( ed1.get() ).isnumeric() and str( ed2.get() ).isnumeric()  ):<br>
+        num1 = int(ed1.get())<br>
+        num2 = int(ed2.get())<br>
+        lb["text"] = num1 + num2<br>
+    else:<br>
+        lb["text"] = "Valores informados inválidos"<br>
+
+ed1 = Entry(janela)<br>
+ed1.place(x=100, y=100)<br>
+ed2 = Entry(janela)<br>
+ed2.place(x=100, y=130)<br>
+
+bt = Button(janela, text="soma",width=20, command= bt_click )<br>
+bt.place( x=100,y=150)<br>
+
+lb = Label(janela, text="Label1")<br>
+lb.place(x=100, y=200)<br>
+
+
+janela.geometry("400x300+500+200")<br>
+
+janela.mainloop<br>
 
