@@ -16,13 +16,13 @@ resultado será exibido </h3>
 
 <h6>Exemplo prático</h6>
 
-#importando a biblioteca tkinter
+//importando a biblioteca tkinter<br>
 from tkinter import *<br>
 
 
 janela = Tk()<br>
 
-#cria metodo <br>
+//cria metodo <br>
 def bt_click():<br>
     print("bt_click")<br>
     if( str( ed1.get() ).isnumeric() and str( ed2.get() ).isnumeric()  ):<br>
