@@ -11,3 +11,10 @@
 	 <li><strong>Event Loop:</strong> O event loop verifica constantemente se outro evento foi acionado. 
 	 Caso a hipótese seja verdadeira, ele irá executar a rotina correspondende</li>
 </ul>
+<h6>Importar Tkinter e criar uma janela</h6>
+import tkinter<br>
+
+root = tkinter.Tk()<br>
+root.mainloop()<br>
+<hr>
+
