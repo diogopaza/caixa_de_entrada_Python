@@ -48,3 +48,10 @@ janela.geometry("400x300+500+200")<br>
 
 janela.mainloop<br>
 
+<h2>Exemplo 2, importação e criação simnples de janela com o Tkinter </h2>
+
+import tkinter as tk == importa a biblioteca gráfica
+
+root = tkinter.Tk()
+
+root.mainloop()
