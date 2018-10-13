@@ -13,6 +13,13 @@ resultado será exibido na própria janela.</h3>
 	 <li><strong>Event Loop:</strong> O event loop verifica constantemente se outro evento foi acionado. 
 	 Caso a hipótese seja verdadeira, ele irá executar a rotina correspondende</li>
 </ul>
+<p>O módulo Tkinter oferece trê formas de trabalhar com geometria e posicionamento:</p>
+<ul>
+	<li>Pack</li>
+	<li>Grid</li>
+	<li>Place</li>
+</ul>
+
 
 <h6>Exemplo prático</h6>
 
