@@ -66,4 +66,14 @@ root = tkinter.Tk()<br>
 
 root.mainloop()<br>
 
-
+<h2>Criando uma aplicação com Banco de Dados</h2>
+<p>Será usado o módulo DBI( DataBase Interface ) que usa uma API( Application Programming Interface ) para se comunicar com o banco de dados</p>
+<p>O banco de dados usado será o SQLite, que já vem incorporado ao módulo DBI. 
+</p>
+<p>O SQLite cria um arquivo com extensão .db em disco, contendo todas as tabelas da aplicação.</p>
+<h4>Estrutura da aplicação</h4>
+<ul>
+	<li>App.py == terá os containers da interface e executará a aplicação</li>
+	<li>Usuarios.py == Classe de modelo para o Usuário</li>
+	<li>Banco.py == Classe de banco de dados</li>
+</ul>
