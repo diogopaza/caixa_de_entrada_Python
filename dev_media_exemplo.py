@@ -11,10 +11,12 @@ class Application:
         self.sair["font"] = ("Calibri","10")
         self.sair["width"] = 5
         self.sair["command"] = self.widget1.quit
-        self.sair.bind("<Button-1>", self.mudarTexto)
+        #mudando texto do botão
+        #self.sair.bind("<Button-1>", self.mudarTexto)
+        self.sair["command"] = self.mudarTexto
         self.sair.pack(side=RIGHT)
 
-    def mudarTexto(self, event):
+    def mudarTexto(self):
         if  self.msg["text"] == "Primeiro widget":
             self.msg["text"] = "O botão recebeu um clique"
         else:
