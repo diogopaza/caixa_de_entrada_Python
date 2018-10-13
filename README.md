@@ -19,6 +19,9 @@ resultado será exibido na própria janela.</h3>
 	<li>Grid</li>
 	<li>Place</li>
 </ul>
+<h4>Eventt handler</h4>
+<p>Os event handler são ações que são executadas como resposta a determinado evento. Sempre que um evento ocorre, o event loop
+interpreta como uma string. Exemplo: o botão ENTER é representado pela string "<Return>"</p>
 
 
 <h6>Exemplo prático</h6>
