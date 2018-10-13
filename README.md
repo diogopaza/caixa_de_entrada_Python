@@ -20,7 +20,7 @@ resultado será exibido na própria janela.</h3>
 from tkinter import *<br>
 
 
-janela = Tk()<br>
+janela = Tk()<br> instanciando a classe Tk pela variável janela
 
 //cria metodo <br>
 def bt_click():<br>
@@ -50,8 +50,10 @@ janela.mainloop<br>
 
 <h2>Exemplo 2, importação e criação simnples de janela com o Tkinter </h2>
 
-import tkinter as tk == importa a biblioteca gráfica
+import tkinter as tk == importa a biblioteca gráfica<br>
 
-root = tkinter.Tk()
+root = tkinter.Tk()<br>
 
-root.mainloop()
+root.mainloop()<br>
+
+
