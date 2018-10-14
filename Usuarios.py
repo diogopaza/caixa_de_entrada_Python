@@ -32,16 +32,20 @@ class Usuarios( object ):
         except:
             return "Ocorreu um erro na inserção do usuário"
 
-    def selectUser(self, nome):
+    def selectUser(self, idusuario):
         banco = Banco()
         try:
             
             c=banco.conexao.cursor()
-            c.execute("select * from usuarios where idusuario = " +idusuario + " ")
-
+            print("select user mostrando id=", idusuario)
+            c.execute("select * from usuarios where idusuario = " + idusuario + "  ")
             for linha in c:
                 self.idusuario = linha[0]
                 self.nome = linha[1]
+                self.telefone = linha[2]
+                self.email = linha[3]
+                self.usuario = linha[4]
+                self.senha = linha[5]
 
             c.close()
   
