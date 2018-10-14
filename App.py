@@ -119,8 +119,8 @@ class Application:
         user.email = self.txtemail.get()
         user.usuario=self.txtusuario.get()
         user.senha=self.txtsenha.get()
-
         user.listar()
+        self.lblmensagem["text"] = user.insertUser() 
         
         self.txtidusuario.delete(0, END)
         self.txtnome.delete(0, END)
