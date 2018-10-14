@@ -5,7 +5,7 @@ class Banco():
     def __init__(self):
         print("iniciando banco de dados")
         self.conexao = sqlite3.connect('banco.db')
-        self.createTable()
+        #self.createTable()
 
     def createTable(self):
         c = self.conexao.cursor()

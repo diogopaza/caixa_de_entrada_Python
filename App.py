@@ -111,9 +111,8 @@ class Application:
     def buscarUsuario(self):
           print("buscando")
           user = Usuarios()
-
-          user.idusuario = self.txtidusuario.get()
-          self.lblmensagem = user.selectUser(idusuario)
+          print(self.txtidusuario.get())
+          self.lblmensagem["text"] = user.selectUser(self.txtidusuario.get())
 
           self.txtidusuario.delete(0, END)
           self.txtidusuario.insert( INSERT, user.idusuario)
@@ -130,16 +129,16 @@ class Application:
         user.email = self.txtemail.get()
         user.usuario=self.txtusuario.get()
         user.senha=self.txtsenha.get()
-        user.listar()
-        self.lblmensagem["text"] = user.insertUser() 
         
+        self.lblmensagem["text"] = user.insertUser() 
+      
         self.txtidusuario.delete(0, END)
         self.txtnome.delete(0, END)
         self.txttelefone.delete(0, END)
         self.txtemail.delete(0, END)
         self.txtusuario.delete(0, END)
         self.txtsenha.delete(0, END)
-
+       
 
   
 
