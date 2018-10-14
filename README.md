@@ -71,6 +71,8 @@ root.mainloop()<br>
 <p>O banco de dados usado será o SQLite, que já vem incorporado ao módulo DBI. 
 </p>
 <p>O SQLite cria um arquivo com extensão .db em disco, contendo todas as tabelas da aplicação.</p>
+<p>Para realizar teste e verificar se o banco e está inserindo os registros dos usuários será usado o <a href="https://sqlitebrowser.org/">DB Browser for SQLite.</p>
+
 <h4>Estrutura da aplicação</h4>
 <ul>
 	<li>App.py == terá os containers da interface e executará a aplicação</li>
