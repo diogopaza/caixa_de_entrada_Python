@@ -110,6 +110,17 @@ class Application:
 
     def buscarUsuario(self):
           print("buscando")
+          user = Usuarios()
+
+          user.idusuario = self.txtidusuario.get()
+          self.lblmensagem = user.selectUser(idusuario)
+
+          self.txtidusuario.delete(0, END)
+          self.txtidusuario.insert( INSERT, user.idusuario)
+
+          self.txtnome.delete(0, END)
+          self.txtnome.insert(INSERT, user.nome)
+          
         
     def inserirUsuario(self):
 
