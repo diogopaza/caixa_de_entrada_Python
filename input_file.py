@@ -5,9 +5,9 @@ import cv2
 root = Tk()
 
 def clicked():
-    root.file_name =  filedialog.askopenfilename(initialdir = "/",title = "Select file",filetypes = (("jpeg files","*.jpg"),("all files","*.*")))
-    print(root.file_name)
-    imagem = cv2.imread(root.file_name)
+    root.fileName =  filedialog.askopenfilename(initialdir = "/",title = "Select file",filetypes = (("jpeg files","*.jpg"),("all files","*.*")))
+    print(root.fileName)
+    imagem = cv2.imread(root.fileName)
     cv2.imshow("Input", imagem)
 
 
